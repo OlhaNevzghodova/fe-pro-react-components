@@ -4,19 +4,23 @@ import NavItem from "./nav";
 const navItems = [
     {
         content: "Home",
-        link: "/"
+        link: "/",
+        id:1
     },
     {
         content: "About us",
         link: "/#about",
+        id:2
     },
     {
         content: "Contact us",
-        link: "/#contact"
+        link: "/#contact",
+        id:3
     },
     {
         content: "Help page",
-        link: "/#help"
+        link: "/#help",
+        id:4
     },
 ]
 
@@ -28,8 +32,8 @@ const Header = () => {
             </a>
             <nav>
                 <ul className="nav-list">
-                    {navItems.map(({content, link}) => {
-                        return <NavItem key={content} link={link} content={content}/>
+                    {navItems.map(({content, link, id}) => {
+                        return <NavItem key={id} link={link} content={content}/>
                     })}
                 </ul>
             </nav>
