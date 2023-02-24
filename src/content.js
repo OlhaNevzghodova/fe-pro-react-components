@@ -61,7 +61,7 @@ const Content = () => {
                 </h1>
                 <ul className="list">
                     {articleItems.map(({title, text}) => {
-                        return <Article key={crypto.randomUUID()} title={title} text={text}/>
+                        return <Article key={title} title={title} text={text}/>
                     })}
                 </ul>
             </div>

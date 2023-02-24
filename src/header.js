@@ -29,7 +29,7 @@ const Header = () => {
             <nav>
                 <ul className="nav-list">
                     {navItems.map(({content, link}) => {
-                        return <NavItem key={crypto.randomUUID()} link={link} content={content}/>
+                        return <NavItem key={title} link={link} content={content}/>
                     })}
                 </ul>
             </nav>
